@@ -15,29 +15,29 @@
 	</head>
 	<body>
 
-		<!-- Header -->
+		<!-- Title -->
 			<section id="header">
 				<header>
 					<h1>PSTR</h1>
-					<p>posture monitoring chair</p>
+					<p>Tony Jin | Benson Zhang | Adit Namdev | Nikhil Nilakantan</p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Introduction</a>
+					<a href="#banner" class="button style2 scrolly-middle">The Project</a>
 				</footer>
 			</section>
 
-		<!-- Banner -->
+		<!-- Concept Banner -->
 			<section id="banner">
 				<header id="p1">
 					<h2>Concept</h2>
 				</header>
 				<p>The PSTR chair allows commercial, educational, and public facilities to monitor the usage of their services and keep track of the posture and health of their users. Our prototype will include pressure sensors in the seat and backrest of the chair for crowdsensing and posture correction, and will also make use of body heat and pulse sensors to track the users' vitals.</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Motivation</a>
+					<a href="#first" class="button style2 scrolly">More Information</a>
 				</footer>
 			</section>
 
-		<!-- Feature 1 -->
+		<!-- Motivation -->
 			<article id="first" class="container box style1">
 				<div class="inner">
 					<header>
@@ -47,21 +47,46 @@
 				</div>
 			</article>
 
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+		<!-- Requirements -->
+			<article class="container box style1">
 				<div class="inner">
 					<header>
-						<h2>Requirements</h2>
+						<h2>System Requirements</h2>
 					</header>
+					<p>Functional:</p>
+					<ul>
+					  <li>Accepts user's weight distribution on chair as input data</li>
+					  <li>Accepts user's heart rate as input data</li>
+					  <li>Accepts user's body temperature as input data</li>
+					  <li>Aggregates collected data into informative charts and graphics to be monitored through a secure web application</li>
+					  <li>Notifies users with a light vibration when his/her posture is not in the optimal position</li>
+					</ul>
+
+					<p>Reliability:<br>
+						Should not be fragile enough to break under normal circumstances.</p>
+
+					<p>Safety:<br>
+						Will not cause any harm or discomfort to users.</p>
+
+					<p>Security<br>
+						Information for each user on web server can only be accessed by those with permission.</p>
+
+					<p>Portability:<br>
+						Lightweight enough for a user to easily carry and should fit any standard chair with a backrest.</p>
+
+					<p>Timing Requirement:<br>
+						Notifies user's incorrect posture within 10 seconds. While in use, updates database with collected data every 5 minutes.</p>
+
+					<p>Performance Requirement:<br>
+						Detects incorrect posture with &lt;2% false positives. Detects body temperature and heart rate with &gt;95% accuracy.</p>
 					<p></p>
 				</div>
 			</article>
 
-		<!-- Portfolio -->
+		<!-- Tech Specs -->
 			<article class="container box style2">
 				<header>
-					<h2>Componenents</h2>
+					<h2>Technical Specifications</h2>
 					<p>text</p>
 				</header>
 				<div class="inner gallery">
@@ -78,19 +103,6 @@
 						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
 					</div>
 				</div>
-			</article>
-
-		<!-- Contact -->
-			<article class="container box style1">
-				<header>
-					<h2>Team Members</h2>
-					<ul class="list-inline">
-					  <li>Tony Jin</li>
-					  <li>Benson Zhang</li>
-					  <li>Adit Namdev</li>
-					  <li>Nikhil Nilakantan</li>
-					</ul>
-				</header>
 			</article>
 
 		<!-- Generic -->
