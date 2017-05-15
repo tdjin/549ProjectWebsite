@@ -12,6 +12,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/pic.css" />
 	</head>
 	<body>
 
@@ -31,7 +32,7 @@
 				<header id="p1">
 					<h2>Concept</h2>
 				</header>
-				<p>The PSTR chair allows commercial, educational, and public facilities to monitor the usage of their services and keep track of the posture and health of their users. Our prototype will include pressure sensors in the seat and backrest of the chair for crowdsensing and posture correction, and will also make use of body heat and pulse sensors to track the users' vitals.</p>
+				<p>The PSTR chair allows commercial, educational, and public facilities to monitor the usage of their services and keep track of the posture and health of their users. Our prototype will include pressure sensors in the seat and backrest of the chair for crowdsensing and posture correction.</p>
 				<footer>
 					<a href="#first" class="button style2 scrolly">More Information</a>
 				</footer>
@@ -55,10 +56,8 @@
 					</header>
 					<p><u>Functional</u><br>
 					  Accepts user's weight distribution on chair as input data.<br>
-					  Accepts user's heart rate as input data.<br>
-					  Accepts user's body temperature as input data.<br>
 					  Aggregates collected data into informative charts and graphics to be monitored through a secure web application.<br>
-					  Notifies users with a light vibration when his/her posture is not in the optimal position.
+					  Notifies users with a soft beeping noise when his/her posture is not in the optimal position.
 					</p>
 
 					<p><u>Reliability</u><br>
@@ -71,38 +70,73 @@
 						Information for each user on web server can only be accessed by those with permission.</p>
 
 					<p><u>Portability</u><br>
-						Lightweight enough for a user to easily carry and should fit any standard chair with a backrest.</p>
+						Able to be dismantled and installed on most chairs with hard surfaces</p>
 
 					<p><u>Timing</u><br>
-						Notifies user's incorrect posture within 10 seconds. While in use, updates database with collected data every 5 minutes.</p>
+						Notifies user's incorrect posture within 2 seconds. While in use, continuously updates database with collected data.</p>
 
 					<p><u>Performance</u><br>
-						Detects incorrect posture with &lt;2% false positives. Detects body temperature and heart rate with &gt;95% accuracy.</p>
+						Detects incorrect posture with &lt;2% false positives.</p>
 				</div>
 			</article>
 
 		<!-- Tech Specs -->
 			<article class="container box style2">
 				<header>
-					<h2>Technical Specifications</h2>
-					<p>Software:<br>
-					We will create our web application using the Django framework (using Python) and host it using Amazon Web Services.</p>
+					<h2>Technical Specifications</h2><br>
+						<h3>Software:</h3>
+						<p>Our back end web server is created using the Node.js Express framework with a MySQL database. Our front end web application is created using Node.js using the Three.js library for graphics and interactions.</p>
+					</section>
 
-					<p>Hardware:</br>
-						<a href="http://www.robotshop.com/en/type-s-load-cell-100-kg.html?gclid=Cj0KEQiA8orFBRCEpODivaOft_EBEiQAy3mlfSWGk_b5kNbYead3EXnwRUqJDptigvFUuBUa9kNQ3ncaAjAz8P8HAQ">Load Cells (100kg)</a> ($45)<br>
-						<a href="https://www.sparkfun.com/products/8777?gclid=Cj0KEQiA8orFBRCEpODivaOft_EBEiQAy3mlfccH9AIOu_1C3slrhTvh7nefXpAMPjghmoPrbmhTU8caAlX58P8HAQ">Body Temperature Sensor</a> ($4.95)<br>
-						<a href="https://www.sparkfun.com/products/11574">Pulse Sensor</a> ($24.95) <br>
-						<a href="https://www.amazon.com/Raspberry-Pi-RASP-PI-3-Model-Motherboard/dp/B01CD5VC92">Raspberry Pi 3 Model B</a> ($38.31)<br>
-						</tr>
+					<section>
+					<header>
+						<h3>Hardware:</h3>
+					</header>
+					<div class="table-wrapper">
+						<table class="default">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.sparkfun.com/products/10245">Load Sensor (50kg)</a></td>
+									<td>$9.95</td>
+								</tr>
+								<tr>
+									<td><a href="https://www.digikey.com/product-detail/en/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589">ATMEGA328P Microchip</a></td>
+									<td>$2.14</td>
+								</tr>
+								<tr>
+									<td><a href="http://www.robotshop.com/en/interlink-15-square-fsr.html">Square Force Sensing Resistor</a></td>
+									<td>$7.95</td>
+								</tr>
+								<tr>
+									<td><a href="https://www.amazon.com/Raspberry-Pi-RASP-PI-3-Model-Motherboard/dp/B01CD5VC92">Raspberry Pi 3 Model 3</a></td>
+									<td>$38.31</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
 				</header>
 
 				<div class="inner gallery">
 					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/t/y/type-s-load-cell-100-kg-1.png" class="image fit"><img src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/t/y/type-s-load-cell-100-kg-1.png" alt="" title="100 Kg Type S Load Cell" /></a></div>
-						<div class="3u 12u(mobile)"><a href="https://cdn.sparkfun.com//assets/parts/1/9/9/7/08777-01.jpg" class="image fit"><img src="https://cdn.sparkfun.com//assets/parts/1/9/9/7/08777-01.jpg" alt="" title="LilyPad Temperature Sensor" /></a></div>
-						<div class="3u 12u(mobile)"><a href="https://cdn.sparkfun.com//assets/parts/7/5/5/9/11574-01.jpg" class="image fit"><img src="https://cdn.sparkfun.com//assets/parts/7/5/5/9/11574-01.jpg" alt="" title="Pulse Sensor" /></a></div>
+						<div class="3u 12u(mobile)"><a href="https://cdn.sparkfun.com//assets/parts/4/5/9/5/10245-01a.jpg" class="image fit"><img src="https://cdn.sparkfun.com//assets/parts/4/5/9/5/10245-01a.jpg" alt="" title="100 Kg Type S Load Cell" /></a></div>
+						<div class="3u 12u(mobile)"><a href="https://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/28-PDip.jpg" class="image fit"><img src="https://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/28-PDip.jpg" alt="" title="ATMEGA328P Microchip" /></a></div>
+						<div class="3u 12u(mobile)"><a href="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/i/n/interlink-15-square-fsr_3.jpg" class="image fit"><img src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/i/n/interlink-15-square-fsr_3.jpg" alt="" title="Square Force Sensing Resistor" /></a></div>
 						<div class="3u 12u(mobile)"><a href="https://cdn.sparkfun.com//assets/parts/1/1/4/1/8/13825-01.jpg" class="image fit"><img src="https://cdn.sparkfun.com//assets/parts/1/1/4/1/8/13825-01.jpg" alt="" title="Raspberry Pi 3 Model B Motherboard" /></a></div>
 					</div>
+			</article>
+
+			<!-- Requirements -->
+			<article class="container box style1">
+				<div class="inner">
+					<img id="grouppic" src="images/pic.jpg" style="width:385px;"/>
+				</div>
 			</article>
 
 			<!-- Competitive Analysis -->
@@ -114,6 +148,42 @@
 					<p><a href="https://www.bma-ergonomics.com/en/product/axia-smart-chair/#ad-image-0">Zami Life Smart Stool:</a><br>
 						A modern looking stool that promotes and actively monitors posture based on angles and sensors on the butt pad. Since its main goal is to promotes fitness and core strength rather than office health, it directed towards more of a niche market.</p>
 				</header>
+			</article>
+
+			<!-- Architecture -->
+			<article class="container box style2">
+				<header>
+					<h2>Architecture</h2>
+					<h3>Force Sensor Data Collection</h3>
+					<p>Force and pressure sensors will be placed at key locations on a chair. The Force Sensors will be queried in intervals on the 3 different clocks on the Atmega 328p. The intervals we choose must take into account the latency between sending from the Microcontroller to the Web Server. The force sensors will return a 10-bit measurement to the microcontroller’s ADC. This should be sufficient to achieve our design specifications for pressure accuracy. Multiple microcontrollers might be needed depending on how many sensors we use. The microcontroller(s) will be connected to a Raspberry Pi over a serial port to pass force sensor data.</p><br>
+
+					<h3>Remote Communication</h3>
+					<p>It is critical that we transfer the data from the microcontroller(s) to a central web server where we can perform computations and display the posture information. We will use the Raspberry Pi to as an intermediary device to receive data from the microcontroller(s) and transmit the data over Wifi to a web server. The Raspberry Pi can be attached to the chair and provide the data remotely.</p><br>
+
+					<h3>Data Processing and User Interface</h3>
+					<p>The force sensor data received from the Raspberry Pi will be processed in this stage. There are a couple ways we might process this data. One method is to use specific thresholds for each sensor to determine posture. This, however, might not be easily applicable to different users because of differing height, weight, etc. Thus, a second method would be to collect different data and use machine learning algorithms to properly classify “good” and “bad” posture. Once processed, the data will show a user’s posture profile in real time. This information will be displayed on a web server so the user can understand the flaws in their posture and adjust themselves until correct.</p>
+			</article>
+
+			<!-- Interaction Diagram -->
+			<article class="container box style2">
+				<header>
+					<h2>Interaction Diagram</h2>
+					<img src="images/diagram.png" style="width:800px;">
+			</article>
+
+			<!-- Use Cases -->
+			<article class="container box style2">
+				<header>
+					<section>
+					<header>
+						<h3>Use Cases</h3>
+					</header>
+					<ol class="default">
+						<li>Monitoring and improving employees' posture, vitals, and general health.</li>
+						<li>Monitoring and improving personal posture, vitals, and general health.</li>
+						<li>Crowdsensing in public facilities.</li>
+					</ul>
+				</section>
 			</article>
 
 		<!-- Generic -->

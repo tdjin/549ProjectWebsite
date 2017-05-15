@@ -1,0 +1,6 @@
+#grouppic {
+    display: block;
+    margin: auto;
+    width: 40%;
+    -webkit-transform: rotate(270deg);
+}
